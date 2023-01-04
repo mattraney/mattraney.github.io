@@ -1,0 +1,415 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std?styles=17909,17911,17907,17905');
+                
+body {
+  background-color: rgb(236, 235, 225);
+  font-style: normal;
+  font-weight: 450;
+}
+
+/* Background styles */
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgb(236, 235, 225) !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgb(24, 24, 24) !important;
+}
+
+.login-bg-img {
+  background-position-y: 0px;
+  background-repeat: repeat-x;
+  height: 130px;
+  pointer-events: none;
+}
+
+.bg-gray {
+  background-color: rgba(33, 40, 50, 0.03);
+}
+
+/* Font styles */
+
+h1, h2, h3, h4, h5, h6,
+label, .btn, .card-header, th,
+.theme-font {
+  font-family: "Circular Std","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: normal;
+}
+
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgb(254, 95, 16) !important;
+}
+
+.page-header .page-header-content .page-header-subtitle {
+  font-size: 1.0rem;
+}
+
+.copyright-text {
+  color: #69707a;
+  font-weight: 450;
+}
+
+.text-fedex {
+  color: #4D148C;
+}
+
+.text-ups {
+  color: #351C15;
+}
+
+/* Link styles */
+
+a.secondary:link,
+a.secondary:visited,
+a.secondary:active {
+  color: #69707a;
+  text-decoration: none;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  border-bottom-color: #69707a;
+  font-family: "Metropolis", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: normal;  
+}
+
+a.secondary:hover {
+  color: #000000;
+  border-bottom-color: #000000;
+}
+
+/* Button styles */
+
+.btn-transparent-light {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: transparent;
+}
+
+.btn-transparent-light:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: transparent;
+}
+
+.btn-dark {
+  background-color: rgb(24, 24, 24);
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: rgba(24, 24, 24, 0.75);
+}
+
+.btn-orange {
+  background-color: rgb(254 95 16);
+  border-color: rgb(254, 95, 16);
+  border-radius: 23px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: .875rem;
+  height: 46px;
+  padding: 0 25px;  
+}
+
+.btn-orange:hover {
+  background-color: rgb(254 95 16);  
+  border-color: rgba(24, 24, 24, 0.3);
+}
+
+.btn-orange:active,
+.btn-orange:active:focus {
+  background-color: rgb(254 95 16);  
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+.btn-orange:focus,
+.btn-orange:focus-visible {
+  background-color: rgb(254 95 16);  
+  border-color: rgb(24, 24, 24);
+  box-shadow: none;
+}
+
+.btn-red {
+  background-color: #e81500;
+  border-color: #e81500;
+  border-radius: 23px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: .875rem;
+  height: 46px;
+  padding: 0 25px;  
+}
+
+.btn-red:hover {
+  background-color: #e81500;  
+  border-color: #c51200;
+}
+
+.btn-red:active,
+.btn-red:active:focus {
+  background-color: #e81500;  
+  border-color: #ff5f50;
+  box-shadow: none;
+}
+
+.btn-red:focus,
+.btn-red:focus-visible {
+  background-color: #e81500;  
+  border-color: rgb(24, 24, 24);
+  box-shadow: none;
+}
+
+.btn-green {
+  background-color: #00ac69;
+  border-color: #00ac69;
+  border-radius: 23px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: .875rem;
+  height: 46px;
+  padding: 0 25px;  
+}
+
+.btn-green:hover {
+  background-color: #00ac69;  
+  border-color: #009259;
+}
+
+.btn-green:active,
+.btn-green:active:focus {
+  background-color: #00ac69;  
+  border-color: #00d381;
+  box-shadow: none;
+}
+
+.btn-green:focus,
+.btn-green:focus-visible {
+  background-color: #00ac69;  
+  border-color: rgb(24, 24, 24);
+  box-shadow: none;
+}
+
+.btn-outline-orange {
+  color: rgb(254 95 16); 
+  border-color: rgb(254 95 16); 
+  border-radius: 22px;
+}
+
+.btn-outline-orange:hover {
+  background-color: rgb(254 95 16);  
+  border-color: rgb(254 95 16); 
+}
+
+.btn-outline-orange:active,
+.btn-outline-orange:focus {
+  background-color: rgb(254 95 16);  
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+.btn-outline-orange:focus,
+.btn-outline-orange:focus-visible {
+  background-color: rgb(254 95 16);  
+  border-color: rgb(254 95 16); 
+  box-shadow: none;
+  color: #ffffff;
+}
+
+.btn-outline-green {
+  color: #00ac69; 
+  border-color: #00ac69; 
+  border-radius: 22px;
+}
+
+.btn-green:hover {
+  background-color: #00ac69;  
+  border-color: #009259;
+  color: #ffffff;
+}
+
+.btn-green:active,
+.btn-green:active:focus {
+  background-color: #00ac69;  
+  border-color: #00d381;
+  box-shadow: none;
+}
+
+.btn-green:focus,
+.btn-green:focus-visible {
+  background-color: #00ac69;  
+  background-color: #00ac69;
+  box-shadow: none;
+}
+
+/* Form styles */
+
+.form-control:focus,
+.dataTable-input:focus {
+  color: #69707a;
+  background-color: #fff;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(254 95 16 / 25%);
+}
+
+.form-check-input:checked {
+  background-color: rgb(0, 172, 105);
+  border-color: rgb(0, 172, 105);
+}
+
+.form-check-input-2 {
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+/* Dropdown styles */
+
+.dropdown-notifications .dropdown-menu .dropdown-notifications-item .dropdown-notifications-item-content .dropdown-notifications-item-content-details {
+  font-size: 0.8rem;
+}
+
+.dropdown-notifications .dropdown-menu .dropdown-notifications-footer {
+  color: #363d47;
+  cursor: auto;
+  background-color: rgba(33, 40, 50, 0.03);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #1e242d;
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.dropdown-notifications .dropdown-menu .dropdown-notifications-header {
+  background-color: #181818;
+}
+
+.dropdown-menu .dropdown-header {
+  font-weight: normal;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #eee;
+}
+
+/* Card styles */
+
+.card {
+  box-shadow: none;
+}
+
+.border-top-lg-black {
+  border-top-width: 0.15rem !important;
+  border-top-color: #181818;
+}
+
+.card:not([class*=bg-]) .card-header {
+  color: #363d47 !important;
+}
+
+.card-header-actions .card-header {
+  min-height: 4rem;
+}
+
+.card .card-header {
+  min-height: 79px;
+}
+
+.card .small-header {
+  min-height: 59px;
+}
+
+.card .card-footer {
+  min-height: 39px !important;
+}
+
+.card .small-footer {
+  min-height: 49px;
+}
+
+/* Sidenav styles */
+
+.sidenav .sidenav-menu .nav .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sidenav-light .sidenav-menu .nav-link:hover,
+.sidenav-light .sidenav-menu .nav-link.active {
+  color: rgb(254, 95, 16);
+}
+
+.sidenav-light .sidenav-menu .nav-link.active .nav-link-icon {
+  color: #a7aeb8;
+}
+
+/* Datatables styles */
+
+.dataTable-sorter {
+  padding-right: 0;
+}
+
+.dataTable-pagination li.active a {
+  z-index: 3;
+  color: #777;
+  background-color: #eee;
+  border-color: #d4dae3;
+}
+
+.dataTable-pagination .active a, .dataTable-pagination .active a:focus, .dataTable-pagination .active a:hover {
+  background-color: #eee;
+}
+
+.dataTable-pagination a {
+  color: #777;
+}
+
+.dataTable-pagination a:hover {
+  background-color: #eee;
+  color: #777;
+}
+
+/* Modal styles */
+
+.modal-header {
+  background-color: rgba(33, 40, 50, 0.03);
+  border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+.btn-close:focus {
+  box-shadow: 0 0 0 0.25rem rgb(254 95 16 / 25%);
+}
+
+.modal-footer {
+  background-color: rgba(33, 40, 50, 0.03);
+  border-top: 1px solid rgba(33, 40, 50, 0.125);
+}
+
+/* Sub-nav styles (account/settings) */
+
+.nav-borders .nav-link.active {
+  color: rgb(33, 40, 50);
+  border-bottom-color: rgb(254, 95, 16);
+  font-weight: 500;
+}
+
+/* Timeline styles */
+
+.timeline .timeline-item .timeline-item-marker .timeline-item-marker-indicator {
+  border: solid 0.25rem #ffffff;
+}
+
+@media (min-width: 576px) {
+  .timeline .timeline-item .timeline-item-content {
+      border-left: solid 0.25rem #ffffff;
+  }
+}
