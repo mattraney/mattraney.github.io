@@ -114,7 +114,17 @@ class LeftNav extends HTMLElement {
         <div id="layoutSidenav_nav">
             <nav class="sidenav shadow-right-sm sidenav-light">
                 <div class="sidenav-menu pt-2">
-                    <div class="nav accordion" id="accordionSidenav">
+                        <div class="nav accordion" id="accordionSidenav">
+                        <!--Only visible on sm breakpoint -->
+                        <a class="nav-link d-sm-none" href="support-notifications.html">
+                            <div class="nav-link-icon"><i data-feather="bell"></i></div>
+                            Notifications
+                        </a>   
+                        <!--Only visible on sm breakpoint -->
+                        <a class="nav-link d-sm-none" href="support-contact.html">
+                            <div class="nav-link-icon"><i data-feather="phone"></i></div>
+                            Contacts
+                        </a>                                              
                         <a class="nav-link" href="index.html">
                             <div class="nav-link-icon"><i data-feather="bar-chart"></i></div>
                             Dashboard
@@ -191,19 +201,10 @@ class LeftNav extends HTMLElement {
                             <div class="nav-link-icon"><i data-feather="tool"></i></div>
                             Installation
                         </a>                            
-                        <!--Below here only visible on sm breakpoint -->
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="phone"></i></div>
-                            Contact Us
-                        </a>
-                        <a class="nav-link d-sm-none" href="#!">
-                            <div class="nav-link-icon"><i data-feather="bell"></i></div>
-                            Notifications
-                            <span class="badge bg-warning-soft text-warning ms-auto">4 New!</span>
-                        </a>  
-                        <a class="nav-link d-sm-none" href="#!">
+                        <!--Below here only visible on sm breakpoint --> 
+                        <a class="nav-link d-sm-none" href="settings-account.html">
                             <div class="nav-link-icon"><i data-feather="user"></i></div>
-                            Account
+                            Settings
                         </a>                                                   
                     </div>
                 </div>

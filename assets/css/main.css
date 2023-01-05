@@ -338,6 +338,26 @@ a.secondary:hover {
 
 /* Sidenav styles */
 
+@media (min-width: 992px) {
+  #layoutSidenav #layoutSidenav_nav {
+    transform: translateX(-15rem);
+  }
+  #layoutSidenav #layoutSidenav_content {
+    margin-left: -15rem;
+    transition: none;
+  }
+
+  .sidenav-toggled #layoutSidenav #layoutSidenav_nav {
+    transform: translateX(0);
+  }
+  .sidenav-toggled #layoutSidenav #layoutSidenav_content {
+    margin-left: 0;
+  }
+  .sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
+    display: block;
+  }
+}
+
 .sidenav .sidenav-menu .nav .nav-link {
   padding-top: 1rem;
   padding-bottom: 1rem;
