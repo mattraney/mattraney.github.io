@@ -49,6 +49,16 @@
                 document.body.classList.toggle("sidenav-toggled");
             }
         });
+
+        sidenavContent.addEventListener('click', event => {
+            const BOOTSTRAP_LG_WIDTH = 992;
+            if (window.innerWidth <= 992) {
+                return;
+            }
+            if (document.body.classList.contains("sidenav-toggled")) {
+                document.body.classList.toggle("sidenav-toggled");
+            }
+        });        
     }
 
     // Add active state to sidbar nav links
