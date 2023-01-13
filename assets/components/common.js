@@ -147,8 +147,8 @@ class LeftNav extends HTMLElement {
                         </a>
                         <div class="collapse" id="collapseLocalDelivery" data-bs-parent="#accordionSidenav">
                             <nav class="sidenav-menu-nested nav accordion" id="accordionSidenavPagesMenu">
-                                <a class="nav-link" href="#!">Level 2</a>
-                                <a class="nav-link" href="#!">Level 2</a>
+                                <a class="nav-link" href="returns-product-check.html">Product Check</a>
+                                <a class="nav-link" href="returns-item-purchase.html">Item Purchase</a>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#collapseCat1" aria-expanded="false" aria-controls="collapseCat1">

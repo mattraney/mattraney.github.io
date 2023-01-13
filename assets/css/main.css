@@ -252,6 +252,10 @@ a.secondary:hover {
 
 /* Form styles */
 
+.form-control, .dataTable-input {
+  min-height: 49px;
+}
+
 .form-control:focus,
 .dataTable-input:focus {
   color: #69707a;

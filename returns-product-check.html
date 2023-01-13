@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>SimpleTire - Inventory Settings</title>
+        <title>SimpleTire - Returns Product Check</title>
         <link href="assets/css/styles.css" rel="stylesheet" />
         <link href="assets/css/main.css" rel="stylesheet" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
@@ -23,57 +23,52 @@
             <div id="layoutSidenav_content">
                 <main class="px-4 py-5">
                     <div class="container-xl">
-                        <!-- Header Row -->                    
+                        <!-- Header Row -->
                         <div class="row">
                             <header class="page-header mb-4">
                                 <div class="page-header-content p-0">
                                     <div class="row align-items-center">
                                         <div class="col-auto">
-                                            <h1 class="page-header-title">Settings</h1>
+                                            <h1 class="page-header-title">Returns</h1>
                                             <nav class="nav nav-borders">
-                                                <a class="nav-link ms-0" href="settings-account.html">Account</a>
-                                                <a class="nav-link" href="settings-warehouses.html">Warehouses</a>
-                                                <a class="nav-link active" href="settings-inventory.html">Inventory</a>
+                                                <a class="nav-link active ms-0" href="returns-product-check.html">Product check</a>
+                                                <a class="nav-link" href="returns-item-purchase.html">Item purchase</a>
                                             </nav>   
                                         </div>
                                     </div>
                                     <hr class="my-0" />
                                 </div>
                             </header>
-                        </div> 
+                        </div>
                         <div class="row">
                             <div class="col-xl-7">
-                                <div class="card card-header-action shadow-sm">
+                                <div class="card card-header-action shadow-sm mb-4">
                                     <form>
                                         <div class="card-header d-flex align-items-center">
-                                            <h2 class="mb-0">Turn off inventory feed</h2>
+                                            <h2 class="mb-0">Product check form</h2>
                                         </div>
-                                        <div class="card-body">
-                                            <div class="mb-3">
-                                                <label class="small mb-1" for="inputUsername">Reason <span class="text-red">*</span></label>
-                                                <input class="form-control" id="inputUsername" type="text" placeholder="Select a reason" value="Select reason" />
-                                            </div>
+                                        <div class="card-body">                                         
                                             <div class="row gx-3 mb-3">
-                                                <!-- Form Group (first name)-->
                                                 <div class="col-md-6">
-                                                    <label class="small mb-1" for="inputFirstName">Start date <span class="text-red">*</span></label>
-                                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Choose date" value="Choose date" />
+                                                    <label class="small mb-1" for="inputPartNum">Part number <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputPartNum" type="text" />
                                                 </div>
-                                                <!-- Form Group (last name)-->
                                                 <div class="col-md-6">
-                                                    <label class="small mb-1" for="inputLastName">End date <span class="text-red">*</span></label>
-                                                    <input class="form-control" id="inputLastName" type="text" placeholder="Choose date" value="Choose date" />
+                                                    <label class="small mb-1" for="inputBrand">Brand <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputBrand" type="text" />
                                                 </div>
-                                            </div>                                           
-                                            <p class="mb-0">
-                                                For assistance turning your inventory feed back on, please <a href="contact.html" class="secondary">contact us</a>.
-                                            </p>
+                                            </div>                                   
                                         </div>
-                                        <div class="card-footer d-flex justify-content-end">
-                                            <button class="btn btn-red" type="button">Turn Off Inventory Feed</button>
-                                        </div>                                            
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div >
+                                                <a href="!#" class="secondary">Reset Filters</a>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-orange" type="button">Submit</button>
+                                            </div>
+                                        </div>
                                     </form>
-                                </div>
+                                </div>                            
                             </div>
                         </div>
                     </div>

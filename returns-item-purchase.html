@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SimpleTire - Returns Item Purchase</title>
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <link href="assets/css/main.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+        <script src="assets/components/common.js"></script>
+        <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="nav-fixed">
+        <main-header></main-header>
+        <div id="layoutSidenav">
+            <!-- Left Navigation -->
+            <main-nav></main-nav>
+            <!-- Main Content-->
+            <div id="layoutSidenav_content">
+                <main class="px-4 py-5">
+                    <div class="container-xl">
+                        <!-- Header Row -->
+                        <div class="row">
+                            <header class="page-header mb-4">
+                                <div class="page-header-content p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-auto">
+                                            <h1 class="page-header-title">Returns</h1>
+                                            <nav class="nav nav-borders">
+                                                <a class="nav-link ms-0" href="returns-product-check.html">Product check</a>
+                                                <a class="nav-link active" href="returns-item-purchase.html">Item purchase</a>
+                                            </nav>   
+                                        </div>
+                                    </div>
+                                    <hr class="my-0" />
+                                </div>
+                            </header>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-7">
+                                <div class="card card-header-action shadow-sm mb-4">
+                                    <form>
+                                        <div class="card-header d-flex align-items-center">
+                                            <h2 class="mb-0">Item purchase form</h2>
+                                        </div>
+                                        <div class="card-body">                                         
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputPOnumber">PO number <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputPOnumber" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputStoreNumber">Store number</label>
+                                                    <input class="form-control" id="inputStoreNumber" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputSource">Source</label>
+                                                    <input class="form-control" id="inputSource" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputDOTdate">DOT date</label>
+                                                    <input class="form-control" id="inputDOTdate" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputTracking">Tracking number</label>
+                                                    <input class="form-control" id="inputTracking" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputQTY">Quantity <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputQTY" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputDateReceived">Date received <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputDateReceived" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputIssueNumber">Issue number</label>
+                                                    <input class="form-control" id="inputIssueNumber" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputPartNumber">Part number <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputPartNumber" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="selectIssue">Issue <span class="text-red">*</span></label>
+                                                    <select class="form-control" id="selectIssue">
+                                                        <option>None</option>
+                                                        <option>Used</option>
+                                                        <option>Damaged</option>
+                                                        <option>Old DOT</option>
+                                                        <option>Fraud</option>
+                                                        <option>Cosmetic damage</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputBrand">Brand <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputBrand" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputIssueDesc">Issue description <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputIssueDesc" type="text" />
+                                                </div>
+                                            </div>
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputLine">Line <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputLine" type="text" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="small mb-1" for="inputSize">Size <span class="text-red">*</span></label>
+                                                    <input class="form-control" id="inputSize" type="text" />
+                                                </div>
+                                            </div>                                                                                                                                                                                                                                                                        
+                                            <div class="row gx-3 mb-3">
+                                                <div class="col-12">
+                                                    <label class="small mb-1" for="inputPictures">Pictures</label>
+                                                    <input class="form-control" id="inputPictures" type="email" placeholder="Upload pictures" />
+                                                </div>
+                                            </div>                                    
+                                        </div>
+                                        <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <div >
+                                                <a href="!#" class="secondary">Reset Filters</a>
+                                            </div>
+                                            <div>
+                                                <button class="btn btn-orange" type="button">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <!-- Footer -->
+                <main-footer></main-footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
+</html>
