@@ -79,6 +79,32 @@ a.secondary:hover {
   border-bottom-color: #000000;
 }
 
+.notification-count {
+  position: relative;
+}
+
+.notification-count .badge-count {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  font-size: .65rem;
+  padding: 4px 6px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  z-index: 9999;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
+.badge-red {
+  background: red;
+}
+
 /* Button styles */
 
 .btn-transparent-light {
@@ -250,6 +276,40 @@ a.secondary:hover {
   box-shadow: none;
 }
 
+.btn-black {
+  background-color: #eeeeee; 
+  border-color: #ffffff; 
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  color: rgb(254 95 16); 
+  font-size: .875rem;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;  
+}
+
+.btn-black:hover {
+  background-color: #dddddd;  
+  border-color: #ffffff;
+  color: rgb(254 95 16); 
+}
+
+.btn-black:active,
+.btn-black:active:focus {
+  background-color: rgb(254 95 16);  
+  border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: none;
+}
+
+.btn-black:focus,
+.btn-black:focus-visible {
+  background-color: rgb(254 95 16);  
+  border-color: rgb(24, 24, 24);
+  box-shadow: none;
+}
+
 /* Form styles */
 
 .form-control, .dataTable-input {
@@ -294,7 +354,7 @@ a.secondary:hover {
 }
 
 .dropdown-notifications .dropdown-menu .dropdown-notifications-header {
-  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0.85)
 }
 
 .dropdown-menu .dropdown-header {
@@ -376,7 +436,7 @@ a.secondary:hover {
   color: #a7aeb8;
 }
 
-/* Datatables styles */
+/* Datatables & table styles */
 
 .dataTable-sorter {
   padding-right: 0;
@@ -400,6 +460,10 @@ a.secondary:hover {
 .dataTable-pagination a:hover {
   background-color: #eee;
   color: #777;
+}
+
+#rulesTable tbody > tr:last-child > td {
+  border-bottom: 0; 
 }
 
 /* Modal styles */
