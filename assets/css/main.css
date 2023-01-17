@@ -441,6 +441,19 @@ a.secondary:hover {
   border-bottom: 1px solid #181818;
 }
 
+#orderLabelTable,
+#datatablesOrders,
+#datatablesWH,
+#datatablesPriceMatch,
+#activeRulesTable,
+#inactiveRulesTable,
+#recRulesTable {
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 /* Modal styles */
 
 .modal-header {
