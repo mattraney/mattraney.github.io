@@ -359,6 +359,10 @@ a.secondary:hover {
   min-height: 79px;
 }
 
+.card .card-header-auto {
+  min-height: auto;
+}
+
 .card .small-header {
   min-height: 59px;
 }
@@ -369,6 +373,17 @@ a.secondary:hover {
 
 .card .small-footer {
   min-height: 49px;
+}
+
+.nav-tabs .nav-link {
+  color: #69707a;
+  padding: 0.55rem 1rem;
+  font-weight: normal;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #181818;
 }
 
 /* Sidenav styles */
@@ -441,13 +456,7 @@ a.secondary:hover {
   border-bottom: 1px solid #181818;
 }
 
-#orderLabelTable,
-#datatablesOrders,
-#datatablesWH,
-#datatablesPriceMatch,
-#activeRulesTable,
-#inactiveRulesTable,
-#recRulesTable {
+table {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
