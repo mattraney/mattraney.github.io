@@ -34,6 +34,10 @@
                                         <h1 class="page-header-title text-white mb-4">Price Match</h1>
                                     </div>
                                     <div class="col-auto">
+                                        <div class="form-check p-2 text-white text-white-75">
+                                            <input class="form-check-input" id="priceMatchAll" type="checkbox" value="">
+                                            <label class="form-check-label" for="priceMatchAll">Yes, I want all <span class="text-primary">5</span> orders (+<span class="text-primary">$2,866.93</span> sales)</label>
+                                        </div>
                                     </div>                                    
                                 </div>
                             </div>
@@ -43,24 +47,17 @@
                         <div class="container-xl mt-n10">
                             <div class="card shadow-sm mb-4">
                                 <div class="card-header card-header-auto tabs border-bottom">
-                                    <ul class="nav nav-tabs card-header-tabs">
+                                    <ul class="nav nav-tabs card-header-tabs">                                       
                                         <li class="nav-item me-1">
                                             <a class="nav-link d-flex align-items-center" href="price-match.html">
                                                 Orders<span class="badge badge-red ms-2 px-2">5</span>
                                             </a>
                                         </li>
-                                        <li class="nav-item me-1">
+                                        <li class="nav-item">
                                             <a class="nav-link d-flex align-items-center" href="price-match-rules.html">
                                                 Rules
                                             </a>
-                                        </li>  
-                                        <!--                                      
-                                        <li class="nav-item">
-                                            <a class="nav-link d-flex align-items-center" href="price-match-reports.html">
-                                                Reports
-                                            </a>
-                                        </li> 
-                                        -->                                       
+                                        </li>                                                                      
                                     </ul>
                                 </div>                                                                      
                                 <div class="card-body mt-2">                                                          
@@ -168,6 +165,17 @@
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input radio-no" id="radioChoice2" type="radio" name="radio1" value="no">
                                                             <label class="form-check-label" for="radioChoice2">No, I do not want this order</label>
+                                                            <div id="reason1" class="border-top mt-2 mx-2 p-2 pb-0">
+                                                                <div class="my-2">
+                                                                    <label for="reasonSelect1" style="display: none;">Reason</label>
+                                                                    <select class="form-control py-1" id="reasonSelect1">
+                                                                        <option>Select a reason...</option>
+                                                                        <option>Discount was too high</option>
+                                                                        <option>Not in stock</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>                                                   
@@ -256,6 +264,17 @@
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input radio-no" id="radioChoice4" type="radio" name="radio2" value="no">
                                                             <label class="form-check-label" for="radioChoice4">No, I do not want this order</label>
+                                                            <div id="reason2" class="border-top mt-2 mx-2 p-2 pb-0">
+                                                                <div class="my-2">
+                                                                    <label for="reasonSelect2" style="display: none;">Reason</label>
+                                                                    <select class="form-control py-1" id="reasonSelect2">
+                                                                        <option>Select a reason...</option>
+                                                                        <option>Discount was too high</option>
+                                                                        <option>Not in stock</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>                                                   
@@ -344,6 +363,17 @@
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input radio-no" id="radioChoice6" type="radio" name="radio3" value="no">
                                                             <label class="form-check-label" for="radioChoice6">No, I do not want this order</label>
+                                                            <div id="reason3" class="border-top mt-2 mx-2 p-2 pb-0">
+                                                                <div class="my-2">
+                                                                    <label for="reasonSelect3" style="display: none;">Reason</label>
+                                                                    <select class="form-control py-1" id="reasonSelect3">
+                                                                        <option>Select a reason...</option>
+                                                                        <option>Discount was too high</option>
+                                                                        <option>Not in stock</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>                                                   
@@ -432,6 +462,17 @@
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input radio-no" id="radioChoice8" type="radio" name="radio4" value="no">
                                                             <label class="form-check-label" for="radioChoice8">No, I do not want this order</label>
+                                                            <div id="reason4" class="border-top mt-2 mx-2 p-2 pb-0">
+                                                                <div class="my-2">
+                                                                    <label for="reasonSelect4" style="display: none;">Reason</label>
+                                                                    <select class="form-control py-1" id="reasonSelect4">
+                                                                        <option>Select a reason...</option>
+                                                                        <option>Discount was too high</option>
+                                                                        <option>Not in stock</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>                                                   
@@ -520,6 +561,17 @@
                                                         <div class="form-check mb-0">
                                                             <input class="form-check-input radio-no" id="radioChoice10" type="radio" name="radio5" value="no">
                                                             <label class="form-check-label" for="radioChoice10">No, I do not want this order</label>
+                                                            <div id="reason5" class="border-top mt-2 mx-2 p-2 pb-0">
+                                                                <div class="my-2">
+                                                                    <label for="reasonSelect5" style="display: none;">Reason</label>
+                                                                    <select class="form-control py-1" id="reasonSelect5">
+                                                                        <option>Select a reason...</option>
+                                                                        <option>Discount was too high</option>
+                                                                        <option>Not in stock</option>
+                                                                        <option>Other</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </td>                                                   
@@ -532,7 +584,10 @@
                                         <a href="#top" class="secondary">Back to Top</a>
                                     </div>
                                     <div>
-                                        <button class="btn btn-orange" type="button">Submit Decisions</button>
+                                        <p class="pb-2 fw-bold border-bottom">Yes, I want <span class="text-primary">5</span> orders (+<span class="text-primary">$2,866.93</span> sales)</p>
+                                        <div class="mb-2 d-flex justify-content-end">
+                                            <button class="btn btn-orange" type="button">Submit Decisions</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -448,7 +448,9 @@ a.secondary:hover {
   color: #777;
 }
 
-#rulesTable tbody > tr:last-child > td {
+#activeRulesTable tbody > tr:last-child > td,
+#inactiveRulesTable tbody > tr:last-child > td,
+#recRulesTable tbody > tr:last-child > td {
   border-bottom: 0; 
 }
 
@@ -461,6 +463,22 @@ table {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#reason1,
+#reason2,
+#reason3,
+#reason4,
+#reason5 {
+  display:none;
+}
+
+#radioChoice2:checked ~ #reason1,
+#radioChoice4:checked ~ #reason2,
+#radioChoice6:checked ~ #reason3,
+#radioChoice8:checked ~ #reason4,
+#radioChoice10:checked ~ #reason5 {
+  display: block;
 }
 
 /* Modal styles */
