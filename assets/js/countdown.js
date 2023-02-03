@@ -1,8 +1,8 @@
-var setEndDate1 = "Jan 30, 2023 15:00:00";
-var setEndDate2 = "Jan 30, 2023 15:30:00";
-var setEndDate3 = "Jan 30, 2023 16:00:00";
-var setEndDate4 = "Jan 31, 2023 16:30:00";
-var setEndDate5 = "Jan 31, 2023 15:00:00";
+var setEndDate1 = "Feb 20, 2023 15:00:00";
+var setEndDate2 = "Feb 20, 2023 15:30:00";
+var setEndDate3 = "Feb 20, 2023 16:00:00";
+var setEndDate4 = "Feb 21, 2023 16:30:00";
+var setEndDate5 = "Feb 21, 2023 15:00:00";
 
 function startCountDownDate(dateVal) {
   var countDownDate = new Date(dateVal).getTime();
